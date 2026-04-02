@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AOSEP — Algerian Open Skills & Education Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo"><span class="nav-dot"></span> AO<span>SEP</span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Platform</a></li>
+      <li><a href="#global">Global Hub</a></li>
+      <li><a href="#users">Who It's For</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="documents.html">Documents</a></li>
+      <li><a href="#" class="nav-cta" onclick="openModal(); return false;">Join Waitlist →</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        🇩🇿 Algeria · EdTech · 2025–2026
+      </div>
+      <h1 class="hero-title">
+        Bridge the Gap.<br>
+        Unlock <em>Global</em><br>
+        Opportunities.
+      </h1>
+      <p class="hero-subtitle">AOSEP is Algeria's hybrid education-to-employment platform — combining structured
+        learning paths, peer-led training, and a dedicated global opportunities hub to help Algerian learners thrive
+        locally and internationally.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary" onclick="openModal(); return false;">Start Learning Free →</a>
+        <a href="#features" class="btn-secondary">Explore Platform</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">1.8M+</div>
+          <div class="stat-label">University Students</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Core Features</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4.8/5</div>
+          <div class="stat-label">User Satisfaction</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="card-behind"></div>
+        <div class="card-base card-main">
+          <div class="card-tag">Active Learning path</div>
+          <div class="card-title">Full-Stack Web Development Track</div>
+          <div class="card-desc">Competency-based progression with real projects, mentorship, and direct job
+            opportunities.</div>
+          <div class="card-progress">
+            <div class="progress-label"><span>HTML & CSS Foundations</span><span>68%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:68%"></div>
+            </div>
+          </div>
+          <div class="card-progress" style="margin-top:10px">
+            <div class="progress-label"><span>JavaScript Essentials</span><span>34%</span></div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width:34%; animation-delay:0.3s"></div>
+            </div>
+          </div>
+          <div class="card-badges">
+            <span class="badge"><span class="badge-dot dot-green"></span> On Track</span>
+            <span class="badge"><span class="badge-dot dot-gold"></span> 3 Opportunities</span>
+            <span class="badge"><span class="badge-dot dot-red"></span> Peer Mentor</span>
+          </div>
+        </div>
+        <div class="floating-card fc-1">
+          <div class="fc-label">Matched Scholarship</div>
+          <div class="fc-value">🎓 DAAD Germany</div>
+        </div>
+        <div class="floating-card fc-2">
+          <div class="fc-label">Remote Work</div>
+          <div class="fc-value">💼 3 New Listings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-inner">
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Web Development</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Data Science</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Digital Marketing</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>DAAD Scholarships</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Erasmus+ Exchange</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Remote Freelancing</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Study Abroad Guidance</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>AI & Machine Learning</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Entrepreneurship</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Peer-Led Learning</strong></span>
+      <!-- duplicate for infinite -->
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Web Development</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Data Science</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Digital Marketing</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>DAAD Scholarships</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Erasmus+ Exchange</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Remote Freelancing</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Study Abroad Guidance</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>AI & Machine Learning</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Entrepreneurship</strong></span>
+      <span class="marquee-item"><span class="marquee-sep"></span> <strong>Peer-Led Learning</strong></span>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <style>
+    .sticky-note {
+      position: absolute;
+      top: 2rem;
+      right: 10%;
+      background: #fff475;
+      color: #111;
+      padding: 1.5rem;
+      border-radius: 2px 2px 20px 2px;
+      box-shadow: 2px 8px 16px rgba(0, 0, 0, 0.12), inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+      transform: rotate(4deg);
+      max-width: 250px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.5;
+      z-index: 10;
+    }
+
+    @media (max-width: 900px) {
+      .sticky-note {
+        position: relative;
+        margin: 1rem auto 3rem;
+        transform: rotate(-2deg);
+        right: 0;
+        top: 0;
+      }
+    }
+  </style>
+  <section class="problem-section reveal" id="problem" style="position: relative;">
+    <div class="sticky-note">
+      One platform. One safe zone. Everything an Algerian dreamer needs—without the chaos of searching everywhere. 📌
+    </div>
+    <div class="section-label">The Problem</div>
+    <h2 class="section-title">Six barriers Algerian<br>learners face daily</h2>
+    <p class="section-subtitle">Despite growing digital access, the path from learning to meaningful employment remains
+      fragmented, isolated, and disconnected from global opportunity.</p>
+    <div class="problems-grid">
+      <div class="problem-item">
+        <div class="problem-num">01</div>
+        <span class="problem-icon">🗺️</span>
+        <div class="problem-title">No Structured Learning Paths</div>
+        <div class="problem-desc">Platforms offer isolated courses without coherent progression frameworks tailored to
+          local career contexts.</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-num">02</div>
+        <span class="problem-icon">🔨</span>
+        <div class="problem-title">Limited Practical Experience</div>
+        <div class="problem-desc">Academic programs emphasize theoretical knowledge at the expense of hands-on,
+          project-based learning.</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-num">03</div>
+        <span class="problem-icon">🚧</span>
+        <div class="problem-title">Hard to Access Local Jobs</div>
+        <div class="problem-desc">Learners who build skills still encounter systemic barriers when seeking internships
+          and entry-level roles.</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-num">04</div>
+        <span class="problem-icon">🌍</span>
+        <div class="problem-title">No Global Opportunity Access</div>
+        <div class="problem-desc">No centralized channel to discover international scholarships, exchanges, remote work,
+          or overseas education.</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-num">05</div>
+        <span class="problem-icon">✈️</span>
+        <div class="problem-title">Zero Study Abroad Guidance</div>
+        <div class="problem-desc">No platform offers end-to-end guidance on international applications, visa processes,
+          or scholarship eligibility.</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-num">06</div>
+        <span class="problem-icon">🏭</span>
+        <div class="problem-title">Weak Industry Connection</div>
+        <div class="problem-desc">Formal institutions operate in isolation from industry, creating a chronic skills
+          mismatch for graduates.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section reveal" id="features">
+    <div class="section-label">The Solution</div>
+    <h2 class="section-title">Three pillars.<br>One ecosystem.</h2>
+    <p class="section-subtitle">AOSEP integrates structured learning, community training, and global opportunity access
+      into a single, cohesive platform designed for the Algerian context.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-num">PILLAR / 01</div>
+        <div class="feature-icon-wrap fi-red">📚</div>
+        <div class="feature-title">Structured Learning Paths</div>
+        <div class="feature-desc">Competency-based tracks with milestones, projects, and skill checkpoints — tailored to
+          Algerian career contexts and global market demands.</div>
+        <ul class="feature-list">
+          <li>Directed graph of learning modules</li>
+          <li>Prerequisite tracking & branching</li>
+          <li>Portfolio-building projects</li>
+          <li>Skill badge certification</li>
+          <li>Arabic, French & English support</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">PILLAR / 02</div>
+        <div class="feature-icon-wrap fi-gold">🤝</div>
+        <div class="feature-title">Peer-Led Training</div>
+        <div class="feature-desc">Community mentorship, hackathons, and peer-review learning sessions — bringing the
+          ecosystem into communities with or without reliable internet.</div>
+        <ul class="feature-list">
+          <li>Physical training center model</li>
+          <li>Peer instructor tools & recognition</li>
+          <li>Hackathons & community events</li>
+          <li>Cohort-based collaborative learning</li>
+          <li>Reputation & endorsement system</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <div class="feature-num">PILLAR / 03</div>
+        <div class="feature-icon-wrap fi-teal">🌐</div>
+        <div class="feature-title">Global Opportunities Hub</div>
+        <div class="feature-desc">Scholarships, exchanges, remote work, study-abroad guidance, and international
+          programs — all in one searchable, filtered, actionable hub.</div>
+        <ul class="feature-list">
+          <li>International scholarship database</li>
+          <li>Exchange programs directory</li>
+          <li>Remote work & freelance listings</li>
+          <li>Step-by-step overseas guidance</li>
+          <li>International mentors network</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL OPPORTUNITIES -->
+  <section class="global-section reveal" id="global">
+    <div class="global-grid">
+      <div>
+        <div class="section-label">Global Hub</div>
+        <h2 class="section-title">Your gateway<br>to the world</h2>
+        <p class="section-subtitle">AOSEP's Global Opportunities layer closes the information asymmetry that currently
+          limits the international aspirations of qualified Algerian students.</p>
+        <div class="global-feature">
+          <div class="gf-icon">🎓</div>
+          <div class="gf-content">
+            <div class="gf-title">International Scholarships Hub</div>
+            <div class="gf-desc">Curated, searchable database with eligibility filters, deadlines, and step-by-step
+              application guidance.</div>
+          </div>
+        </div>
+        <div class="global-feature">
+          <div class="gf-icon">🗺️</div>
+          <div class="gf-content">
+            <div class="gf-title">Study Abroad Guidance Center</div>
+            <div class="gf-desc">End-to-end guides on overseas university applications, visa processes, language
+              requirements, and pre-departure prep.</div>
+          </div>
+        </div>
+        <div class="global-feature">
+          <div class="gf-icon">👥</div>
+          <div class="gf-content">
+            <div class="gf-title">International Mentors Network</div>
+            <div class="gf-desc">Alumni and mentors with overseas study or work experience providing direct guidance to
+              learners pursuing global pathways.</div>
+          </div>
+        </div>
+      </div>
+      <div class="opps-grid">
+        <div class="opp-card">
+          <span class="opp-card-icon">🎓</span>
+          <div class="opp-card-title">Scholarships</div>
+          <div class="opp-card-desc">DAAD, Eiffel, Erasmus Mundus, and more — filtered for Algerian students.</div>
+          <div class="opp-card-count">42 active listings</div>
+        </div>
+        <div class="opp-card">
+          <span class="opp-card-icon">🔄</span>
+          <div class="opp-card-title">Exchange Programs</div>
+          <div class="opp-card-desc">Semester abroad programs with admission timelines and requirements.</div>
+          <div class="opp-card-count">18 programs</div>
+        </div>
+        <div class="opp-card">
+          <span class="opp-card-icon">💻</span>
+          <div class="opp-card-title">Remote Work</div>
+          <div class="opp-card-desc">Vetted remote jobs and freelance projects accessible from anywhere in Algeria.
+          </div>
+          <div class="opp-card-count">67 open roles</div>
+        </div>
+        <div class="opp-card">
+          <span class="opp-card-icon">🏛️</span>
+          <div class="opp-card-title">Study Abroad</div>
+          <div class="opp-card-desc">Complete roadmaps for studying in Europe, North America, and the Arab world.</div>
+          <div class="opp-card-count">12 destination guides</div>
+        </div>
+        <div class="opp-card">
+          <span class="opp-card-icon">🏆</span>
+          <div class="opp-card-title">Competitions</div>
+          <div class="opp-card-desc">International hackathons, case competitions, and innovation challenges.</div>
+          <div class="opp-card-count">9 upcoming</div>
+        </div>
+        <div class="opp-card">
+          <span class="opp-card-icon">🤝</span>
+          <div class="opp-card-title">Mentors</div>
+          <div class="opp-card-desc">Connect with Algerians who've studied or worked abroad and can guide your journey.
+          </div>
+          <div class="opp-card-count">31 mentors</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section reveal">
+    <div style="text-align:center; margin-bottom: 0;">
+      <div class="section-label" style="display:inline-flex;">How It Works</div>
+      <h2 class="section-title">From sign-up to opportunity</h2>
+      <p class="section-subtitle" style="margin:1rem auto 0; text-align:center;">A clear, structured path from wherever
+        you are to wherever you want to go.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Create Your Profile</div>
+        <div class="step-desc">Tell AOSEP your goals, current level, and interests. Get a personalized learning
+          dashboard.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">Choose a Track</div>
+        <div class="step-desc">Select from curated learning paths in tech, business, languages, and more — with
+          milestones and projects.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">Learn with Community</div>
+        <div class="step-desc">Join peer cohorts, attend training sessions, get mentored by those a few steps ahead.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Unlock Opportunities</div>
+        <div class="step-desc">Access matched local jobs, international scholarships, remote work, and study-abroad
+          pathways.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="users-section reveal" id="users">
+    <div class="section-label">Who It's For</div>
+    <h2 class="section-title">Built for every<br>Algerian learner</h2>
+    <p class="section-subtitle">From high school to professional, AOSEP meets learners at their level and takes them
+      further.</p>
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span style="display: inline-block; padding: 0.5rem 1rem; border-radius: 50px; background: rgba(0, 0, 0, 0.03); color: var(--text); font-size: 0.85rem; border: 1px solid var(--border);">
+        ℹ️ <strong>Note:</strong> The profiles below use starting hard-coded data for better understanding. Hover to explore.
+      </span>
+    </div>
+
+    <div style="filter: blur(2.5px); opacity: 0.85; transition: all 0.4s ease;" onmouseover="this.style.filter='blur(0)'; this.style.opacity='1';" onmouseout="this.style.filter='blur(2.5px)'; this.style.opacity='0.85';">
+      <div class="users-tabs">
+      <button class="tab-btn active" onclick="switchTab('student')">🎒 High School</button>
+      <button class="tab-btn" onclick="switchTab('uni')">🎓 University Students</button>
+      <button class="tab-btn" onclick="switchTab('self')">💡 Self-Learners</button>
+      <button class="tab-btn" onclick="switchTab('pro')">💼 Professionals</button>
+      <button class="tab-btn" onclick="switchTab('mentor')">🌟 Mentors</button>
+    </div>
+
+    <div class="tab-content active" id="tab-student">
+      <div class="user-info">
+        <span class="user-label">High School Students</span>
+        <h3 class="user-title">Start your journey before university</h3>
+        <p class="user-desc">AOSEP gives high schoolers early exposure to digital careers, global awareness, and the
+          skills that universities and employers actually want — building a head start before everyone else.</p>
+        <div class="user-needs">
+          <div class="need-item">
+            <div class="need-icon">🖥️</div> Intro to coding, design, and digital literacy
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🌍</div> Early awareness of international study options
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🏆</div> Hackathons and competitions for young builders
+          </div>
+          <div class="need-item">
+            <div class="need-icon">📚</div> Guided self-study tracks with peer support
+          </div>
+        </div>
+      </div>
+      <div class="user-visual">
+        <div class="uv-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="uv-avatar">🎒</div>
+            <div>
+              <div class="uv-name">Amira, 17</div>
+              <div class="uv-sub">Setif · High School</div>
+            </div>
+          </div>
+          <div class="uv-status">Active Learner</div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">HTML & Web Basics</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-1"></div>
+          </div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">Python Introduction</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-2"></div>
+          </div>
+        </div>
+        <div class="uv-opportunities">
+          <div class="uv-opp-title">Matched for You</div>
+          <div class="opp-item"><span class="opp-item-icon">🏆</span><span class="opp-item-name">Youth Innovation
+              Hackathon</span><span class="opp-item-type">Competition</span></div>
+          <div class="opp-item"><span class="opp-item-icon">🎓</span><span class="opp-item-name">DAAD Study Scholarship
+              Info</span><span class="opp-item-type">Scholarship</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-uni">
+      <div class="user-info">
+        <span class="user-label">University Students</span>
+        <h3 class="user-title">Build what your degree doesn't teach</h3>
+        <p class="user-desc">AOSEP bridges the gap between your degree and the skills employers actually look for — with
+          practical projects, internship access, and study-abroad guidance all in one place.</p>
+        <div class="user-needs">
+          <div class="need-item">
+            <div class="need-icon">💻</div> Practical, portfolio-building projects
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🏢</div> Local internship and job opportunities
+          </div>
+          <div class="need-item">
+            <div class="need-icon">✈️</div> Erasmus & exchange program guidance
+          </div>
+          <div class="need-item">
+            <div class="need-icon">👥</div> Peer study groups and mentorship
+          </div>
+        </div>
+      </div>
+      <div class="user-visual">
+        <div class="uv-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="uv-avatar">🎓</div>
+            <div>
+              <div class="uv-name">Yassine, 21</div>
+              <div class="uv-sub">Algiers · CS Student</div>
+            </div>
+          </div>
+          <div class="uv-status">On Track</div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">Full-Stack Development</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-1"></div>
+          </div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">Data Science Foundations</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-3"></div>
+          </div>
+        </div>
+        <div class="uv-opportunities">
+          <div class="uv-opp-title">Matched for You</div>
+          <div class="opp-item"><span class="opp-item-icon">🏢</span><span class="opp-item-name">Sonatrach Tech
+              Internship</span><span class="opp-item-type">Internship</span></div>
+          <div class="opp-item"><span class="opp-item-icon">🔄</span><span class="opp-item-name">Erasmus+ Exchange –
+              Spain</span><span class="opp-item-type">Exchange</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-self">
+      <div class="user-info">
+        <span class="user-label">Self-Learners</span>
+        <h3 class="user-title">Structure the learning you've been doing alone</h3>
+        <p class="user-desc">You have the motivation. AOSEP provides the structure, accountability, community, and
+          direct access to opportunities that transform self-taught skills into real career advancement.</p>
+        <div class="user-needs">
+          <div class="need-item">
+            <div class="need-icon">📋</div> Guided paths with accountability checkpoints
+          </div>
+          <div class="need-item">
+            <div class="need-icon">💻</div> Remote work and freelance listings
+          </div>
+          <div class="need-item">
+            <div class="need-icon">👤</div> Portfolio to prove your skills to employers
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🌐</div> Global community of like-minded learners
+          </div>
+        </div>
+      </div>
+      <div class="user-visual">
+        <div class="uv-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="uv-avatar">💡</div>
+            <div>
+              <div class="uv-name">Rania, 25</div>
+              <div class="uv-sub">Oran · Freelancer</div>
+            </div>
+          </div>
+          <div class="uv-status">Advanced</div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">Digital Marketing Mastery</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-1" style="width:85%"></div>
+          </div>
+        </div>
+        <div class="uv-opportunities">
+          <div class="uv-opp-title">Matched for You</div>
+          <div class="opp-item"><span class="opp-item-icon">💻</span><span class="opp-item-name">Remote Content
+              Strategist</span><span class="opp-item-type">Remote Work</span></div>
+          <div class="opp-item"><span class="opp-item-icon">🎓</span><span class="opp-item-name">Google Certificate
+              Program</span><span class="opp-item-type">Certification</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-pro">
+      <div class="user-info">
+        <span class="user-label">Professionals</span>
+        <h3 class="user-title">Reskill for the digital economy</h3>
+        <p class="user-desc">Whether you're pivoting careers or upgrading your skills to compete internationally, AOSEP
+          offers advanced tracks, global certifications, and a professional network that opens new doors.</p>
+        <div class="user-needs">
+          <div class="need-item">
+            <div class="need-icon">🚀</div> Advanced and specialized skill tracks
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🌍</div> International career and mobility pathways
+          </div>
+          <div class="need-item">
+            <div class="need-icon">📜</div> Verifiable certifications for employers
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🤝</div> Professional network and industry connections
+          </div>
+        </div>
+      </div>
+      <div class="user-visual">
+        <div class="uv-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="uv-avatar">💼</div>
+            <div>
+              <div class="uv-name">Karim, 31</div>
+              <div class="uv-sub">Constantine · Engineer</div>
+            </div>
+          </div>
+          <div class="uv-status">Reskilling</div>
+        </div>
+        <div class="uv-track">
+          <div class="uv-track-title">AI & Machine Learning</div>
+          <div class="uv-prog-bar">
+            <div class="uv-prog-fill fill-2" style="width:55%"></div>
+          </div>
+        </div>
+        <div class="uv-opportunities">
+          <div class="uv-opp-title">Matched for You</div>
+          <div class="opp-item"><span class="opp-item-icon">🌍</span><span class="opp-item-name">Senior Dev – Remote
+              (EU)</span><span class="opp-item-type">Remote Work</span></div>
+          <div class="opp-item"><span class="opp-item-icon">🏛️</span><span class="opp-item-name">MBA in Paris –
+              Scholarship</span><span class="opp-item-type">Scholarship</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-mentor">
+      <div class="user-info">
+        <span class="user-label">Mentors</span>
+        <h3 class="user-title">Give back. Build impact. Grow your network.</h3>
+        <p class="user-desc">AOSEP's peer teaching model lets experienced learners and professionals create content,
+          lead sessions, and guide others — earning recognition, building an international network, and contributing to
+          Algeria's future.</p>
+        <div class="user-needs">
+          <div class="need-item">
+            <div class="need-icon">✍️</div> Content creation tools for learning tracks
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🌟</div> Reputation and endorsement system
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🌐</div> International mentor network access
+          </div>
+          <div class="need-item">
+            <div class="need-icon">🏅</div> Community impact and recognition
+          </div>
+        </div>
+      </div>
+      <div class="user-visual">
+        <div class="uv-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="uv-avatar">🌟</div>
+            <div>
+              <div class="uv-name">Sara, 28</div>
+              <div class="uv-sub">Annaba · ML Engineer</div>
+            </div>
+          </div>
+          <div class="uv-status">Top Mentor</div>
+        </div>
+        <div style="margin-bottom:12px">
+          <div
+            style="font-size:0.78rem;font-weight:600;color:var(--muted);margin-bottom:10px;font-family:'Space Mono',monospace;letter-spacing:0.05em;text-transform:uppercase;">
+            Impact Stats</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+            <div
+              style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center">
+              <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800">34</div>
+              <div style="font-size:0.75rem;color:var(--muted)">Learners guided</div>
+            </div>
+            <div
+              style="background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px;text-align:center">
+              <div style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:800">4.9★</div>
+              <div style="font-size:0.75rem;color:var(--muted)">Avg. rating</div>
+            </div>
+          </div>
+        </div>
+        <div class="uv-opportunities">
+          <div class="uv-opp-title">Recent Activity</div>
+          <div class="opp-item"><span class="opp-item-icon">📹</span><span class="opp-item-name">Published Python
+              Session</span><span class="opp-item-type">2h ago</span></div>
+          <div class="opp-item"><span class="opp-item-icon">✅</span><span class="opp-item-name">Reviewed 3 project
+              submissions</span><span class="opp-item-type">Today</span></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="tech-section reveal">
+    <div class="section-label">Technology</div>
+    <h2 class="section-title">Built to scale,<br>built to last</h2>
+    <p class="section-subtitle">A modern, accessible technical stack designed to reach learners across Algeria —
+      including low-bandwidth and mobile-first environments.</p>
+    <div class="tech-grid">
+      <div class="tech-item"><span class="tech-icon">⚛️</span>
+        <div class="tech-name">React.js</div>
+        <div class="tech-role">Frontend / SPA</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🎨</span>
+        <div class="tech-name">Tailwind CSS</div>
+        <div class="tech-role">Responsive Design</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🟩</span>
+        <div class="tech-name">Node.js / Express</div>
+        <div class="tech-role">API Server</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🗄️</span>
+        <div class="tech-name">PostgreSQL</div>
+        <div class="tech-role">Structured Data</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🍃</span>
+        <div class="tech-name">MongoDB</div>
+        <div class="tech-role">Content Metadata</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🔐</span>
+        <div class="tech-name">JWT / OAuth 2.0</div>
+        <div class="tech-role">Authentication</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">📱</span>
+        <div class="tech-name">PWA</div>
+        <div class="tech-role">Offline Support</div>
+      </div>
+      <div class="tech-item"><span class="tech-icon">🐳</span>
+        <div class="tech-name">Docker / Vercel</div>
+        <div class="tech-role">Deployment</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results-section reveal">
+    <div style="text-align:center">
+      <div class="section-label" style="display:inline-flex;">Prototype Results</div>
+      <h2 class="section-title">Validated by real users</h2>
+      <p class="section-subtitle" style="margin:1rem auto 0;text-align:center;">Initial user testing with 12
+        participants across Algeria confirmed AOSEP's value proposition and usability.</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <div class="result-num">100%</div>
+        <div class="result-label">Understood platform purpose within 2 minutes</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">10/12</div>
+        <div class="result-label">Rated navigation as highly intuitive</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">4.8/5</div>
+        <div class="result-label">Average satisfaction — Global Opportunities Hub</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">100%</div>
+        <div class="result-label">Task completion on opportunity browsing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="roadmap-section reveal" id="roadmap">
+    <div class="section-label">Roadmap</div>
+    <h2 class="section-title">From prototype<br>to national platform</h2>
+    <p class="section-subtitle">A phased, ambitious plan to scale AOSEP across Algeria and eventually across the MENA
+      region.</p>
+    <div class="roadmap-row">
+      <div class="phase-card">
+        <span class="phase-tag p1">Phase 1</span>
+        <div class="phase-period">0 – 6 months</div>
+        <div class="phase-label">Foundation & Beta Launch</div>
+        <ul class="phase-items">
+          <li>Complete backend API & production database</li>
+          <li>User authentication with role-based access</li>
+          <li>Mentorship matching algorithm</li>
+          <li>Initial content library (Web Dev, Data Science, Marketing)</li>
+          <li>Closed beta: 50–100 users in Batna & Algiers</li>
+          <li>Global Opportunities Hub beta testing</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <span class="phase-tag p2">Phase 2</span>
+        <div class="phase-period">6 – 18 months</div>
+        <div class="phase-label">Growth & Partnerships</div>
+        <ul class="phase-items">
+          <li>Partner with 3+ Algerian universities</li>
+          <li>Onboard 10+ industry partners</li>
+          <li>5+ international scholarship providers</li>
+          <li>First physical training center pilot</li>
+          <li>Expand to 10 learning tracks</li>
+          <li>1,000 registered learners</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <span class="phase-tag p3">Phase 3</span>
+        <div class="phase-period">18 – 36 months</div>
+        <div class="phase-label">National Scale & Beyond</div>
+        <ul class="phase-items">
+          <li>AI-powered recommendation engine</li>
+          <li>Training centers in 5+ wilayas</li>
+          <li>Government partnership for credential recognition</li>
+          <li>100,000 active learners nationally</li>
+          <li>Direct scholarship pipelines with overseas universities</li>
+          <li>Explore MENA regional expansion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section reveal">
+    <h2 class="cta-title">
+      The blueprint exists.<br>
+      <span>Now we build it.</span>
+    </h2>
+    <p class="cta-sub">Join the waitlist and be among the first Algerian learners to access structured skills
+      development and global opportunities — all in one place.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn-gold" onclick="openModal(); return false;">Join the Waitlist →</a>
+      <a href="#features" class="btn-ghost">Explore the Platform</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">AO<span>SEP</span></div>
+        <p class="footer-tagline">The Algerian Open Skills & Education Platform — bridging the gap between education and
+          real-world opportunities.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Platform</div>
+        <ul class="footer-links">
+          <li><a href="#features">Learning Paths</a></li>
+          <li><a href="#features">Peer Training</a></li>
+          <li><a href="#global">Global Hub</a></li>
+          <li><a href="#users">User Profiles</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Opportunities</div>
+        <ul class="footer-links">
+          <li><a href="#">Scholarships</a></li>
+          <li><a href="#">Exchange Programs</a></li>
+          <li><a href="#">Remote Work</a></li>
+          <li><a href="#">Study Abroad</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Project</div>
+        <ul class="footer-links">
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="#">Research Paper</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 AOSEP · Université Barika · Computer Science Dept.</span>
+      <div class="footer-bottom-right">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Arabic</a>
+        <a href="#">Français</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal" onclick="handleOverlayClick(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modal-form">
+        <div class="modal-title">Join the Waitlist</div>
+        <p class="modal-sub">Be the first to access AOSEP when we launch our beta in Algeria.</p>
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Wilaya (City)</label>
+          <input type="text" class="form-input" placeholder="e.g. Algiers, Batna, Oran...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">I am a...</label>
+          <select class="form-select">
+            <option>High School Student</option>
+            <option>University Student</option>
+            <option>Recent Graduate</option>
+            <option>Self-Learner</option>
+            <option>Professional</option>
+            <option>Mentor / Educator</option>
+          </select>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Join Waitlist →</button>
+        <p class="form-note">🔒 No spam. We'll notify you when beta access opens.</p>
+      </div>
+      <div class="success-msg" id="success-msg">
+        <span class="check">✅</span>
+        <h3>You're on the list!</h3>
+        <p>We'll reach out when beta access opens. Welcome to the AOSEP community.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
