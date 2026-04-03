@@ -848,31 +848,33 @@
       <div id="modal-form">
         <div class="modal-title">Join the Waitlist</div>
         <p class="modal-sub">Be the first to access AOSEP when we launch our beta in Algeria.</p>
-        <div class="form-group">
-          <label class="form-label">Full Name</label>
-          <input type="text" class="form-input" placeholder="Your full name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email Address</label>
-          <input type="email" class="form-input" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Wilaya (City)</label>
-          <input type="text" class="form-input" placeholder="e.g. Algiers, Batna, Oran...">
-        </div>
-        <div class="form-group">
-          <label class="form-label">I am a...</label>
-          <select class="form-select">
-            <option>High School Student</option>
-            <option>University Student</option>
-            <option>Recent Graduate</option>
-            <option>Self-Learner</option>
-            <option>Professional</option>
-            <option>Mentor / Educator</option>
-          </select>
-        </div>
-        <button class="form-submit" onclick="submitForm()">Join Waitlist →</button>
-        <p class="form-note">🔒 No spam. We'll notify you when beta access opens.</p>
+        <form id="waitlist-form" action="https://formspree.io/f/mgopnvnv" method="POST">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Wilaya (City)</label>
+            <input type="text" name="wilaya" class="form-input" placeholder="e.g. Algiers, Batna, Oran...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">I am a...</label>
+            <select name="role" class="form-select">
+              <option>High School Student</option>
+              <option>University Student</option>
+              <option>Recent Graduate</option>
+              <option>Self-Learner</option>
+              <option>Professional</option>
+              <option>Mentor / Educator</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit" id="waitlist-submit-btn">Join Waitlist →</button>
+          <p class="form-note">🔒 No spam. We'll notify you when beta access opens.</p>
+        </form>
       </div>
       <div class="success-msg" id="success-msg">
         <span class="check">✅</span>
