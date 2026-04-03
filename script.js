@@ -24,6 +24,18 @@ function closeModal() {
     if (successMsg) successMsg.style.display = '';
   }, 300);
 }
+// Mobile Menu
+function toggleMobileMenu() {
+  document.getElementById('nav-hamburger').classList.toggle('open');
+  document.getElementById('nav-drawer').classList.toggle('open');
+  document.body.style.overflow = document.getElementById('nav-drawer').classList.contains('open') ? 'hidden' : '';
+}
+function closeMobileMenu() {
+  document.getElementById('nav-hamburger').classList.remove('open');
+  document.getElementById('nav-drawer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 function handleOverlayClick(e) {
   if(e.target === document.getElementById('modal')) closeModal();
 }

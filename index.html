@@ -25,7 +25,21 @@
       <li><a href="documents.html">Documents</a></li>
       <li><a href="#" class="nav-cta" onclick="openModal(); return false;">Join Waitlist →</a></li>
     </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#features" onclick="toggleMobileMenu()">Platform</a>
+    <a href="#global" onclick="toggleMobileMenu()">Global Hub</a>
+    <a href="#users" onclick="toggleMobileMenu()">Who It's For</a>
+    <a href="#roadmap" onclick="toggleMobileMenu()">Roadmap</a>
+    <a href="documents.html" onclick="toggleMobileMenu()">Documents</a>
+    <a href="#" class="drawer-cta" onclick="toggleMobileMenu(); openModal(); return false;">Join Waitlist →</a>
+    <div class="drawer-meta">© 2025 AOSEP · Université Barika</div>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="home">
@@ -385,11 +399,14 @@
       further.</p>
     <div style="text-align: center; margin-bottom: 2.5rem;">
       <span style="display: inline-block; padding: 0.5rem 1rem; border-radius: 50px; background: rgba(0, 0, 0, 0.03); color: var(--text); font-size: 0.85rem; border: 1px solid var(--border);">
-        ℹ️ <strong>Note:</strong> The profiles below use starting hard-coded data for better understanding. Hover to explore.
+        ℹ️ <strong>Note:</strong> The profiles below use hard-coded data for illustration. Hover or tap to explore.
       </span>
     </div>
 
-    <div style="filter: blur(2.5px); opacity: 0.85; transition: all 0.4s ease;" onmouseover="this.style.filter='blur(0)'; this.style.opacity='1';" onmouseout="this.style.filter='blur(2.5px)'; this.style.opacity='0.85';">
+    <div id="users-blur-wrapper" style="filter: blur(2.5px); opacity: 0.85; transition: all 0.4s ease; cursor: pointer;"
+      onmouseover="this.style.filter='blur(0)'; this.style.opacity='1';"
+      onmouseout="if(!this._tapped){this.style.filter='blur(2.5px)'; this.style.opacity='0.85';}"
+      onclick="this._tapped=!this._tapped; this.style.filter=this._tapped?'blur(0)':'blur(2.5px)'; this.style.opacity=this._tapped?'1':'0.85';">
       <div class="users-tabs">
       <button class="tab-btn active" onclick="switchTab('student')">🎒 High School</button>
       <button class="tab-btn" onclick="switchTab('uni')">🎓 University Students</button>
